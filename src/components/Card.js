@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './Card.css';
 
-function Card({ word, onFlip }) {
+function Card({ question, answer, onFlip }) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -15,8 +15,8 @@ function Card({ word, onFlip }) {
   return (
     <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleFlip}>
       <div className="card-inner">
-        <div className="card-front">?</div>
-        <div className="card-back">{word}</div>
+        <div className="card-front">{question}</div>
+        <div className="card-back">{answer}</div>
       </div>
     </div>
   );

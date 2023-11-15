@@ -1,9 +1,12 @@
 /* src/components/Card.css */
 .card {
+  color: black;
     perspective: 1000px;
-    width: 100px;
-    height: 150px;
-    margin: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    background-color: #F0f0f0;
+    border-radius: 8px;
   }
   
   .card-inner {
